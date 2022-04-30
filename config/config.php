@@ -1,8 +1,25 @@
 <?php
 
-/*
- * You can place your custom package configuration in here.
- */
 return [
+    'column' => 'invoice_number',
 
+    'digits' => 10,
+
+    'prefix' => null,
+
+    'concatenation_symbol' => '-',
+
+    /*
+     *   RENEW BY:
+     *
+     * - infinite:
+     * - max_invoice:
+     * - day:
+     * - week:
+     * - month:
+     * - year:
+     */
+    'renew_by' => 'infinite',
+
+    'max_invoices' => 120,
 ];

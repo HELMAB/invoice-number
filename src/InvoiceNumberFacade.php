@@ -4,9 +4,6 @@ namespace Helmab\InvoiceNumber;
 
 use Illuminate\Support\Facades\Facade;
 
-/**
- * @see \Helmab\InvoiceNumber\Skeleton\SkeletonClass
- */
 class InvoiceNumberFacade extends Facade
 {
     /**

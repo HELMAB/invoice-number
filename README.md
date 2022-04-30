@@ -16,7 +16,33 @@ composer require helmab/invoice-number
 ## Usage
 
 ```php
-// Usage description here
+
+use Helmab\InvoiceNumber\Traits\HasInvoiceNumber;
+use Illuminate\Database\Eloquent\Model;
+
+class Invoice extends Model {
+
+    use HasInvoiceNumber;
+
+    protected $invoice_number_column = 'invoice_number';
+
+    protected $fillable = [
+        'invoice_number'
+    ];
+}
+```
+
+### Get Latest Invoice Number
+
+```php
+use Helmab\InvoiceNumber\InvoiceNumber;
+
+class InvoiceController extends Controller {
+    public function getLatestInvoiceNumber()
+    {
+        return (new InvoiceNumber())->invoiceNumber();
+    }
+}
 ```
 
 ### Testing
