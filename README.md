@@ -13,6 +13,12 @@ You can install the package via composer:
 composer require helmab/invoice-number
 ```
 
+Publish `invoice-number.php` configuration file:
+
+```bash
+php artisan vendor:publish --provider="Helmab\InvoiceNumber\InvoiceNumberServiceProvider"
+```
+
 ## Usage
 
 ```php
