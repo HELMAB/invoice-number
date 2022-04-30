@@ -2,7 +2,6 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/helmab/invoice-number.svg?style=flat-square)](https://packagist.org/packages/helmab/invoice-number)
 [![Total Downloads](https://img.shields.io/packagist/dt/helmab/invoice-number.svg?style=flat-square)](https://packagist.org/packages/helmab/invoice-number)
-![GitHub Actions](https://github.com/helmab/invoice-number/actions/workflows/main.yml/badge.svg)
 
 Generate the invoice number for Laravel application.
 
