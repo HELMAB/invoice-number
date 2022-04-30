@@ -76,8 +76,10 @@ trait HasInvoiceNumber
 
     private function invoiceNumberByWeek(): string
     {
+        $today = Carbon::now();
         $latest_invoice_number = $this->newQuery()
-            ->whereDay('created_at', Carbon::now())
+            ->whereDate('created_at', '>', $today->startOfWeek())
+            ->whereDate('created_at', '<=', $today->endOfWeek())
             ->count();
 
         return $this->getInvoiceNumber($latest_invoice_number + 1);
