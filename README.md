@@ -35,13 +35,17 @@ class Invoice extends Model {
 ### Get Latest Invoice Number
 
 ```php
+namespace App\Http\Controllers;
+
 use Helmab\InvoiceNumber\InvoiceNumber;
 
 class InvoiceController extends Controller {
+
     public function getLatestInvoiceNumber()
     {
         return (new InvoiceNumber())->invoiceNumber();
     }
+    
 }
 ```
 
